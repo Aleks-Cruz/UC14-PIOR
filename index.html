@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimApp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <aside class="sidebar">
+
+        <h2 onclick="voltarHome()">
+    🌎 ClimApp
+</h2>
+
+        <button onclick="trocarPais('brasil')">Brasil</button>
+
+        <button onclick="trocarPais('argentina')">Argentina</button>
+
+        <button onclick="trocarPais('australia')">Austrália</button>
+
+        <button onclick="trocarPais('canada')">Canadá</button>
+
+        <button onclick="trocarPais('eua')">EUA</button>
+
+        <button onclick="trocarPais('peru')">Peru</button>
+
+    </aside>
+
+    <!-- CONTAINER -->
+    <main class="container">
+
+        <!-- BRASIL -->
+        <div class="pais ativo" id="brasil">
+
+            <img
+            src="IMG/brasil.svg"
+            usemap="#map-brasil"
+            width="2481"
+            height="3508">
+
+            <map name="map-brasil">
+
+                <area shape="poly"
+                coords="289,1309,826,852,699,1443,543,1409,430,1354,430,1353,433,1354"
+                href="#"
+                onclick="abrirModal('Amazonas')">
+
+                <area shape="poly"
+                coords="1525,1156,1803,1083,1746,1261,1616,1323,1580,1309"
+                href="#"
+                onclick="abrirModal('Maranhão')">
+
+                <area shape="poly"
+                coords="1408,2009,1816,1771,1864,1952,1819,2071,1567,2041,1479,2034"
+                href="#"
+                onclick="abrirModal('Minas Gerais')">
+
+                <area shape="poly"
+                coords="1109,2643,1271,2470,1413,2650,1378,2720,1331,2765,1276,2765,1215,2711,1141,2645"
+                href="#"
+                onclick="abrirModal('Rio Grande do Sul')">
+
+            </map>
+
+        </div>
+
+        <!-- ARGENTINA -->
+        <div class="pais" id="argentina">
+
+            <img
+            src="IMG/argentina.svg"
+            usemap="#map-argentina"
+            width="2481"
+            height="3508">
+
+            <map name="map-argentina">
+
+                <area shape="poly"
+                coords="791,2411,787,2160,1005,2205,1000,2280,992,2336,970,2380,938,2403,902,2424,857,2484,746,2494,648,2497,649,2429,657,2364,624,2272,677,2161,741,2158,788,2157,785,2157,787,2159,815,2175,820,2163"
+                href="#"
+                onclick="abrirModal('Chubut')">
+
+                <area shape="poly"
+                coords="598,2103,901,1857,1006,2054,981,2152,803,2150,714,2157,633,2151,616,2154"
+                href="#"
+                onclick="abrirModal('Rio Negro')">
+
+                <area shape="poly"
+                coords="648,2506,625,2904,943,2675,899,2567,828,2497,829,2496"
+                href="#"
+                onclick="abrirModal('Santa Cruz')">
+
+                <area shape="poly"
+                coords="920,1638,888,1304,1022,1359,1002,1480,1003,1638,1004,1628"
+                href="#"
+                onclick="abrirModal('Santa Luis')">
+
+            </map>
+
+        </div>
+
+        <!-- AUSTRALIA -->
+        <div class="pais" id="australia">
+
+            <img
+            src="IMG/australia.svg"
+            usemap="#map-australia"
+            width="2481"
+            height="3508">
+
+            <map name="map-australia">
+
+                <area shape="poly"
+                coords="1487,1582,1507,1759,1770,1770,1864,1607,1865,1606,1865,1604"
+                href="#"
+                onclick="abrirModal('New South')">
+
+                <area shape="poly"
+                coords="1113,1468,1114,1078,1347,1096,1400,1168,1393,1345,1389,1468"
+                href="#"
+                onclick="abrirModal('Northeam')">
+
+                <area shape="poly"
+                coords="1110,1475,1148,1661,1473,1673,1481,1474"
+                href="#"
+                onclick="abrirModal('South')">
+
+                <area shape="poly"
+                coords="617,1431,1084,1109,1113,1646,974,1720,741,1758"
+                href="#"
+                onclick="abrirModal('Westeam')">
+
+            </map>
+
+        </div>
+
+        <!-- CANADA -->
+        <div class="pais" id="canada">
+
+            <img
+            src="IMG/canada.svg"
+            usemap="#map-canada"
+            width="2481"
+            height="3508">
+
+            <map name="map-canada">
+
+                <area shape="poly"
+                coords="672,1517,622,1811,856,1801,886,1563,801,1542"
+                href="#"
+                onclick="abrirModal('Alberta')">
+
+                <area shape="poly"
+                coords="369,1382,399,1809,598,1799,632,1633,664,1514"
+                href="#"
+                onclick="abrirModal('British Columbia')">
+
+                <area shape="poly"
+                coords="1091,1571,1094,2059,1262,2048,1244,1886,1229,1611"
+                href="#"
+                onclick="abrirModal('Manitoba')">
+
+                <area shape="poly"
+                coords="538,1035,595,1440,1067,1515,1069,1514,1080,1516,1064,1508,1064,1505"
+                href="#"
+                onclick="abrirModal('Yukon')">
+
+            </map>
+
+        </div>
+
+        <!-- EUA -->
+        <div class="pais" id="eua">
+
+            <img
+            src="IMG/eua.svg"
+            usemap="#map-eua"
+            width="2666"
+            height="1550">
+
+            <map name="map-eua">
+
+                <area shape="poly"
+                coords="1060,968,1073,1073,1134,1033,1131,977,1081,957,1056,966,1048,969"
+                href="#"
+                onclick="abrirModal('Alaska')">
+
+                <area shape="poly"
+                coords="1144,372,1162,484,1362,535,1371,416"
+                href="#"
+                onclick="abrirModal('Montana')">
+
+                <area shape="poly"
+                coords="1366,797,1361,1000,1493,1076,1558,1011,1579,924,1435,862"
+                href="#"
+                onclick="abrirModal('Texas')">
+
+                <area shape="poly"
+                coords="1225,518,1202,636,1348,654,1360,538"
+                href="#"
+                onclick="abrirModal('Wyoming')">
+
+            </map>
+
+        </div>
+
+        <!-- PERU -->
+        <div class="pais" id="peru">
+
+            <img
+            src="IMG/peru.svg"
+            usemap="#map-peru"
+            width="2481"
+            height="3508">
+
+            <map name="map-peru">
+
+                <area shape="poly"
+                coords="1591,2020,1632,2179,1770,2276,1787,2219,1707,2130,1668,2067,1654,2030"
+                href="#"
+                onclick="abrirModal('Cusco')">
+
+                <area shape="poly"
+                coords="1280,1969,1311,2036,1337,1970,1312,1941,1291,1957,1258,1978,1267,2022,1288,2029"
+                href="#"
+                onclick="abrirModal('Lima')">
+
+                <area shape="poly"
+                coords="983,1451,1004,1616,1076,1560,1101,1486,1032,1476,1011,1457"
+                href="#"
+                onclick="abrirModal('Piura')">
+
+                <area shape="poly"
+                coords="1312,1576,1272,1718,1398,1777,1378,1696,1386,1660,1377,1604"
+                href="#"
+                onclick="abrirModal('San Martin')">
+
+            </map>
+
+        </div>
+
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="fechar" onclick="fecharModal()">
+                &times;
+            </span>
+
+            <h2 id="tituloEstado"></h2>
+
+            <p id="infoClima"></p>
+            <p id="infoPopulacao"></p>
+            <p id="infoAltitude"></p>
+            <p id="infoVegetacao"></p>
+
+        </div>
+
+    </div>
+
+    <button onclick="fazerLogin()">
+    Entrar
+</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
