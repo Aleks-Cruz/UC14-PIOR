@@ -227,12 +227,26 @@ function trocarPais(idPais){
 }
 
 
+// LOGIN
+
 function fazerLogin(){
 
     window.location.href =
     "home.html";
 
 }
+
+// HOME
+
+function entrarApp(){
+
+    window.location.href =
+    "climapp.html";
+
+}
+
+// VOLTAR HOME
+
 function voltarHome(){
 
     window.location.href =
